@@ -7,6 +7,7 @@ namespace ProjectEuler.Calculation
 	{
 		public static void Main(string[] args)
 		{
+
 		}
 	}
 }
