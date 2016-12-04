@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.0.0
+MinimumVisualStudioVersion = 10.0.0.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectEuler.Calculation", "ProjectEuler.Calculation\ProjectEuler.Calculation.csproj", "{8629E75E-5BC0-492B-B2DC-88960EC8811C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectEuler.Model", "ProjectEuler.Model\ProjectEuler.Model.csproj", "{18B95545-0348-4E77-8DDF-E16209CB52F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectEuler.Test", "ProjectEuler.Test\ProjectEuler.Test.csproj", "{A3023AF7-741C-4142-B19F-EF81A81683CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8629E75E-5BC0-492B-B2DC-88960EC8811C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8629E75E-5BC0-492B-B2DC-88960EC8811C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8629E75E-5BC0-492B-B2DC-88960EC8811C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8629E75E-5BC0-492B-B2DC-88960EC8811C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18B95545-0348-4E77-8DDF-E16209CB52F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18B95545-0348-4E77-8DDF-E16209CB52F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18B95545-0348-4E77-8DDF-E16209CB52F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18B95545-0348-4E77-8DDF-E16209CB52F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3023AF7-741C-4142-B19F-EF81A81683CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3023AF7-741C-4142-B19F-EF81A81683CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3023AF7-741C-4142-B19F-EF81A81683CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3023AF7-741C-4142-B19F-EF81A81683CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
