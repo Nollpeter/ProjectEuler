@@ -3,23 +3,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ProjectEuler.Model;
 
 namespace ProjectEuler.Calculation.Problems
 {
-    public class Problem1
+    class Problem2 : IProblem
     {
+        #region Implementation of IProblem
+
         public void Run()
         {
-            Int32 sum = 0;
-            for (int i = 0; i < 1000; i++)
+            Int64 sum = 0;
+            PrimeValidator validator = new PrimeValidator();
+            for (int i = 0; i < 2000000; i++)
             {
-                if (i%3 == 0 || i%5 == 0)
-                {
+                if (validator.IsPrime(i))
                     sum += i;
-                }
             }
             Console.WriteLine(sum);
         }
 
+        #endregion
     }
 }
