@@ -49,7 +49,13 @@
     <Compile Include="Problems\Problem13.cs" />
     <Compile Include="Problems\Problem14.cs" />
     <Compile Include="Problems\Problem15.cs" />
+    <Compile Include="Problems\Problem19.cs" />
     <Compile Include="Problems\Problem2.cs" />
+    <Compile Include="Problems\Problem20.cs" />
+    <Compile Include="Problems\Problem21.cs" />
+    <Compile Include="Problems\Problem22.cs" />
+    <Compile Include="Problems\Problem24.cs" />
+    <Compile Include="Problems\Problem25.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
