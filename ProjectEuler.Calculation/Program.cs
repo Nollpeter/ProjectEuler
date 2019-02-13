@@ -8,7 +8,7 @@ namespace ProjectEuler.Calculation
 	{
 		public static void Main(string[] args)
 		{
-            IProblem problem = new Problem25();
+            IProblem problem = new Problem75();
             problem.Run();
 		    Console.ReadLine();
 		}
