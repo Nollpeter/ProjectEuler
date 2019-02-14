@@ -12,7 +12,7 @@ namespace ProjectEuler.Model
 
 			Combination combination = new Combination();
 
-			IList<IList<Int32>> generateRandomSortedRepatedCombinations = combination.GenerateRandomSortedRepatedCombinations(Enumerable.Range(1, wireLength-2).ToList(), 2);
+			/*IList<IList<Int32>> generateRandomSortedRepatedCombinations = combination.GenerateRandomSortedRepatedCombinations(Enumerable.Range(1, wireLength-2).ToList(), 2);
 
 			foreach (IList<Int32> combinations in generateRandomSortedRepatedCombinations)
 			{
@@ -20,7 +20,12 @@ namespace ProjectEuler.Model
 				if(a+b > wireLength-1) continue;
 
 				Int32 c = (wireLength - a - b);
-				
+
+				if (IsValidTriangle(a, b, c))
+				{
+					Console.WriteLine($"{a},{b},{c} -> valid");
+				}
+
 				if (IsValidTriangle(a, b, c) && IsValidRightAngleTriangle(a, b, c))
 				{
 					res.Add((a, b, c));
@@ -31,26 +36,31 @@ namespace ProjectEuler.Model
 				//else { Console.Write("bad"); }
 
 				
-			}
+			}*/
 
-			//for (Int32 i = 1; i < wireLength - 1; i++)
-			//{
-			//	for (Int32 j = 1; j < wireLength - 1; j++)
-			//	{
-			//
-			//		int a = i, b = j, c = (wireLength - i - j);
-			//		Console.Write($"{a},{b},{c} -> ");
-			//
-			//		if (IsValidTriangle(a, b, c) && IsValidRightAngleTriangle(a, b, c))
-			//		{
-			//			res.Add((a, b, c));
-			//			Console.Write("good");
-			//		}
-			//		else { Console.Write("bad");}
-			//
-			//		Console.Write("\r\n");
-			//	}
-			//}
+			for (Int32 i = 2; i < wireLength /2; i++)
+			{
+				for (Int32 j = 2; j < wireLength/2; j++)
+				{
+			
+					int c = i, b = j, a = (wireLength - i - j);
+
+					if (a < b) break;
+
+					//Console.Write($"{a},{b},{c} -> ");
+			
+					if (IsValidRightAngleTriangle(a, b, c) && IsValidTriangle(a, b, c))
+					{
+						res.Add((a, b, c));
+						//if (res.Count > 2) return res;
+
+						//Console.Write("good");
+					}
+					//else { Console.Write("bad");}
+			
+					//Console.Write("\r\n");
+				}
+			}
 
 
 			return res;
@@ -63,7 +73,7 @@ namespace ProjectEuler.Model
 
 		public static Boolean IsValidTriangle(Int32 a, Int32 b, Int32 c)
 		{
-			return c < (a + b);
+			return c < (a + b) && a <(b+c) && b < (a+c);
 		}
 	}
 }

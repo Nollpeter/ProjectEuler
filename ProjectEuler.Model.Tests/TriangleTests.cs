@@ -29,6 +29,7 @@ namespace ProjectEuler.Model.Tests
 
 
 		[TestCase(12,1)]
+		[TestCase(20, 0)]
 		[TestCase(120, 3)]
 		[TestCase(20,0)]
 		public void TestRightAngleCountsFromWireLength(Int32 length, Int32 expCount)
