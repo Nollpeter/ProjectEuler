@@ -6,7 +6,7 @@ namespace ProjectEuler.Model
 {
 	public class Triangles
 	{
-		public static IList<(Int32 a, Int32 b, Int32 c)> GenerateRightAngleTriangles(Int32 wireLength)
+		public static IEnumerable<(Int32 a, Int32 b, Int32 c)> GenerateRightAngleTriangles(Int32 wireLength)
 		{
 			IList<(Int32 a, Int32 b, Int32 c)> res = new List<(Int32 a, Int32 b, Int32 c)>();
 
@@ -51,7 +51,10 @@ namespace ProjectEuler.Model
 			
 					if (IsValidRightAngleTriangle(a, b, c) && IsValidTriangle(a, b, c))
 					{
-						res.Add((a, b, c));
+						//res.Add((a, b, c));
+
+						yield return (a, b, c);
+
 						//if (res.Count > 2) return res;
 
 						//Console.Write("good");
@@ -63,7 +66,7 @@ namespace ProjectEuler.Model
 			}
 
 
-			return res;
+			//return res;
 		}
 
 		public static Boolean IsValidRightAngleTriangle(Int32 a, int b, int c)

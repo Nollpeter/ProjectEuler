@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using NUnit.Framework;
 
 namespace ProjectEuler.Model.Tests
@@ -34,8 +35,8 @@ namespace ProjectEuler.Model.Tests
 		[TestCase(20,0)]
 		public void TestRightAngleCountsFromWireLength(Int32 length, Int32 expCount)
 		{
-			IList<(Int32 a, Int32 b, Int32 c)> generateRightAngleTriangles = Triangles.GenerateRightAngleTriangles(length);
-			Assert.AreEqual(expCount, generateRightAngleTriangles.Count);
+			IEnumerable<(Int32 a, Int32 b, Int32 c)> generateRightAngleTriangles = Triangles.GenerateRightAngleTriangles(length);
+			Assert.AreEqual(expCount, generateRightAngleTriangles.Count());
 
 		}
 	}
