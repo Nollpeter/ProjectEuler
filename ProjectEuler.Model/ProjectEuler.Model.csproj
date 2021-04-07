@@ -49,6 +49,7 @@
     <Compile Include="Factorial.cs" />
     <Compile Include="FibonacciGenerator.cs" />
     <Compile Include="PascalTriangle.cs" />
+    <Compile Include="PentagonalNumberGenerator.cs" />
     <Compile Include="Permutation.cs" />
     <Compile Include="PrimeValidator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

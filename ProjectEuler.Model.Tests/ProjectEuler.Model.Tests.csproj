@@ -65,6 +65,7 @@
       <DependentUpon>FibonacciGeneratorTest.cs</DependentUpon>
     </Compile>
     <Compile Include="CombinatoricsTest.cs" />
+    <Compile Include="PentagonalNumberTests.cs" />
     <Compile Include="PrimeValidatorTest.cs" />
     <Compile Include="PrimeValidatorTest.IsPrime.g.cs">
       <DependentUpon>PrimeValidatorTest.cs</DependentUpon>
